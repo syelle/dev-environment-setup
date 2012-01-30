@@ -31,7 +31,7 @@ function link_homedir_files () {
 link_homedir_files ~/dev/web-dev-environment-setup/home ~
 
 # install RVM
-bash < <(curl -s https://rvm.beginrescueend.com/install/rvm)
+bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
 rvm install 1.9.2
 rvm use ruby-1.9.2 --default
 
