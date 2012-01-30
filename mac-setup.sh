@@ -28,10 +28,14 @@ function link_homedir_files () {
     fi
   done
 }
+shopt -s dotglob
 link_homedir_files ~/dev/web-dev-environment-setup/home ~
+shopt -u dotglob
 
 # install RVM
 bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
+source "$HOME/.rvm/scripts/rvm"
+rvm reload
 rvm install 1.9.2
 rvm use ruby-1.9.2 --default
 

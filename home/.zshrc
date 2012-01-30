@@ -27,9 +27,10 @@ ZSH=$HOME/.oh-my-zsh
 plugins=(rails3 ruby git rvm github osx vagrant knife)
 
 # Customize to your needs...
-source "$HOME/bin/zsh-theme"
-export PATH=$HOME/.rvm/bin:$HOME/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+export PATH=$HOME/.rvm/bin:$HOME/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/git/bin
 export ZSH
+source $ZSH/oh-my-zsh.sh
+source "$HOME/bin/zsh-theme"
 
 # This is a good place to source rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
