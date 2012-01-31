@@ -1,0 +1,2 @@
+# ignore OSX directory metadata
+.DS_STORE
