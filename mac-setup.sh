@@ -36,8 +36,8 @@ shopt -u dotglob
 bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
 source "$HOME/.rvm/scripts/rvm"
 rvm reload
-rvm install 1.9.2
-rvm use ruby-1.9.2 --default
+rvm install 2.0.0
+rvm use ruby-2.0.0 --default
 
 # install oh-my-zsh
 if [ ! -d "$HOME/.oh-my-zsh" ]
