@@ -24,7 +24,7 @@ ZSH=$HOME/.oh-my-zsh
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(rails3 ruby git rvm github osx vagrant knife)
+plugins=(rails ruby git rvm github osx vagrant knife)
 
 # Customize to your needs...
 export PATH=$HOME/.rvm/bin:$HOME/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/git/bin
