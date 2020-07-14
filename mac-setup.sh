@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 # to execute: 
-#   bash < <(curl -s https://raw.github.com/syelle/web-dev-environment-setup/master/mac-setup.sh)
-
+# bash < <(curl -s https://raw.github.com/syelle/web-dev-environment-setup/master/mac-setup.sh)
 
 # Make sure this script is not run with sudo
 if [ $(id -u) -eq 0 ]
@@ -11,10 +10,10 @@ then
 fi
 
 # get linux setup
-if [ ! -d "$HOME/dev/web-dev-environment-setup" ]
+if [ ! -d "$HOME/dev/dev-environment-setup" ]
 then
   mkdir -p ~/dev
-  git clone git://github.com/syelle/web-dev-environment-setup.git ~/dev/web-dev-environment-setup
+  git clone git://github.com/syelle/dev-environment-setup.git ~/web-dev-environment-setup
 fi
 
 # link home directory - includes .zshrc bin/*
@@ -29,15 +28,8 @@ function link_homedir_files () {
   done
 }
 shopt -s dotglob
-link_homedir_files ~/dev/web-dev-environment-setup/home ~
+link_homedir_files ~/dev/dev-environment-setup/home ~
 shopt -u dotglob
-
-# install RVM
-bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
-source "$HOME/.rvm/scripts/rvm"
-rvm reload
-rvm install 2.0.0
-rvm use ruby-2.0.0 --default
 
 # install oh-my-zsh
 if [ ! -d "$HOME/.oh-my-zsh" ]

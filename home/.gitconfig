@@ -1,0 +1,9 @@
+[user]
+	name = Shaun Yelle
+
+[core]
+	editor = nano
+	excludesfile = /Users/shaun/.gitignore_global
+
+[url "git@github.com:"]
+        insteadOf = https://github.com/

@@ -1,11 +1,11 @@
 # Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-# ZSH_THEME="bira"
+ZSH_THEME="robbyrussell"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -24,17 +24,12 @@ ZSH=$HOME/.oh-my-zsh
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(rails ruby git rvm github osx vagrant knife)
+plugins=(git github osx sublime)
 
-# Customize to your needs...
-export PATH=$HOME/.rvm/bin:$HOME/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/git/bin
-export ZSH
+# Pull in oh-myzsh preferences
 source $ZSH/oh-my-zsh.sh
-source "$HOME/bin/zsh-theme"
+#source "$HOME/bin/zsh-theme"
 
-# This is a good place to source rvm
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+# Configure path
+export PATH=/usr/local/opt/python/libexec/bin:$HOME/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/git/bin
 
-# Load chef environment variables
-export CHEF_USER='shaun'
-export EDITOR='nano'
