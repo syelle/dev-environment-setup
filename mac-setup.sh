@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # to execute: 
-# bash < <(curl -s https://raw.github.com/syelle/web-dev-environment-setup/master/mac-setup.sh)
+# bash < <(curl -s https://raw.github.com/syelle/dev-environment-setup/master/mac-setup.sh)
 
 # Make sure this script is not run with sudo
 if [ $(id -u) -eq 0 ]
@@ -13,7 +13,7 @@ fi
 if [ ! -d "$HOME/dev/dev-environment-setup" ]
 then
   mkdir -p ~/dev
-  git clone git://github.com/syelle/dev-environment-setup.git ~/web-dev-environment-setup
+  git clone git://github.com/syelle/dev-environment-setup.git ~/dev-environment-setup
 fi
 
 # link home directory - includes .zshrc bin/*
