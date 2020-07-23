@@ -12,7 +12,7 @@ fi
 # get linux setup
 if [ ! -d "$HOME/code/dev-environment-setup" ]
 then
-  mkdir -p ~/dev
+  mkdir -p ~/code
   git clone git://github.com/syelle/dev-environment-setup.git ~/code/dev-environment-setup
 fi
 
@@ -28,7 +28,7 @@ function link_homedir_files () {
   done
 }
 shopt -s dotglob
-link_homedir_files ~/dev/dev-environment-setup/home ~
+link_homedir_files ~/code/dev-environment-setup/home ~
 shopt -u dotglob
 
 # install oh-my-zsh
