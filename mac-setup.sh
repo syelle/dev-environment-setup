@@ -10,10 +10,10 @@ then
 fi
 
 # get linux setup
-if [ ! -d "$HOME/dev/dev-environment-setup" ]
+if [ ! -d "$HOME/code/dev-environment-setup" ]
 then
   mkdir -p ~/dev
-  git clone git://github.com/syelle/dev-environment-setup.git ~/dev-environment-setup
+  git clone git://github.com/syelle/dev-environment-setup.git ~/code/dev-environment-setup
 fi
 
 # link home directory - includes .zshrc bin/*
